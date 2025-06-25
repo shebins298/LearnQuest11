@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnQuest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LearnQuest</h1>
+      <p class="subtitle">Plus One Computer Application Chapter-wise Quiz</p>
+      <label for="chapterSelect">Select Chapter:</label>
+      <select id="chapterSelect">
+        <option value="">--Choose a chapter--</option>
+      </select>
+      <button id="startQuizBtn">Start Quiz</button>
+
+      <div id="quizBox" class="hidden">
+        <div id="question"></div>
+        <ul id="options"></ul>
+        <div id="feedback"></div>
+        <button id="nextBtn">Next</button>
+        <div id="scoreBox">Score: <span id="score">0</span></div>
+      </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
